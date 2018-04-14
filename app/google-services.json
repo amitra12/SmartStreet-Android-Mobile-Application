@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "454530303622",
+    "firebase_url": "https://smtstrt.firebaseio.com",
+    "project_id": "smartstreettrees",
+    "storage_bucket": "smartstreettrees.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454530303622:android:affdcf57e1610994",
+        "android_client_info": {
+          "package_name": "msd.com.smartstreet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "454530303622-d10o26bg2cqusiunikavcde532c8nbl6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjq6gX1J1tkqNi4mCQyLmWHFGhCi_yU_s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

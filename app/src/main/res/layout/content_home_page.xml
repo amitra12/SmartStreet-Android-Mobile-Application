@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserHomePage"
+    android:background="#EEEEEE">
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/aboutButton"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="70dp"
+            android:background="@color/colorAccent"
+            android:drawablePadding="-10dp"
+            android:drawableTop="@mipmap/about"
+            android:text="About"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutTest1"
+            android:layout_width="354dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/about"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/interact"
+                android:layout_width="167dp"
+                android:layout_height="130dp"
+                android:background="@android:color/holo_purple"
+                android:drawablePadding="-10dp"
+                android:drawableTop="@mipmap/interact"
+                android:text="Interact"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/nearbyButton"
+                android:layout_width="163dp"
+                android:layout_height="130dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.23"
+                android:background="@android:color/holo_green_dark"
+                android:drawablePadding="-10dp"
+                android:drawableTop="@mipmap/nearby"
+                android:text="Nearby"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayoutTest2"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/linearLayoutTest1"
+        android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cameraButton"
+                android:layout_width="167dp"
+                android:layout_height="130dp"
+                android:layout_alignStart="@+id/button"
+                android:layout_below="@+id/button"
+                android:background="?android:attr/colorActivatedHighlight"
+                android:drawablePadding="-10dp"
+                android:drawableTop="@mipmap/photo_round"
+                android:text="Photo"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/shareButton"
+                android:layout_width="167dp"
+                android:layout_height="130dp"
+                android:layout_alignTop="@+id/button3"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@+id/button3"
+                android:background="@android:color/holo_orange_light"
+                android:drawablePadding="-10dp"
+                android:drawableTop="@mipmap/share"
+                android:text="Share"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/commentButton"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@+id/linearLayoutTest2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/btn_login"
+            android:drawablePadding="-25dp"
+            android:drawableTop="@mipmap/comments"
+            android:text="Comment"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</RelativeLayout>

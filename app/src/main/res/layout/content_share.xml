@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Share"
+    android:background="#EEEEEE">
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/email"
+        android:layout_width="370dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="70dp"
+        android:background="@color/colorAccent"
+        android:drawableLeft="@drawable/whitemail"
+        android:drawablePadding="-200dp"
+        android:text="             Share "
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/fb"
+        android:layout_width="370dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="31dp"
+        android:background="@color/colorPrimaryDark"
+        android:drawableLeft="@drawable/facebook"
+        android:drawablePadding="-170dp"
+        android:text="Facebook"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        android:layout_below="@+id/email"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

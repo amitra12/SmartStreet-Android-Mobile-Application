@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Main Relative Layout-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="#FFFFFF"
+    android:padding="4dp">
+
+    <!-- ImageView for the comment image -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv"
+        android:src="@mipmap/user_comment"
+        android:background="#00F0F8FF"
+        android:padding="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+
+    <!-- TextView for the Comment Text-->
+    <TextView
+        android:id="@+id/tvComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/iv"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:text="Hey, nice app !!"
+        android:textColor="?attr/colorPrimaryDark"
+        android:textSize="20dp" />
+
+    <!-- TextView for displaying user name-->
+    <TextView
+        android:id="@+id/tvUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvComment"
+        android:layout_toRightOf="@+id/iv"
+        android:paddingLeft="20dp"
+        android:textColor="#000000" />
+
+
+
+        <!-- RatinBar for displaying rating-->
+    <RatingBar
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvUser"
+        android:layout_toRightOf="@+id/iv"
+        android:paddingLeft="20dp"
+        android:id="@+id/ratingBar"
+        android:numStars="5"
+        android:rating="5"
+        android:isIndicator="true"
+        style="?android:attr/ratingBarStyleSmall"
+        />
+
+</RelativeLayout>
